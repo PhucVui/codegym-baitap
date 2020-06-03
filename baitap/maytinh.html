@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <input type = "text" id='tinh' >
+    <input type = "text" id='toan' >
+    <button onclick="hamCong()">Addition(+)</button>
+    <button onclick="hamTru()">Subtraction(-)</button>
+    <button onclick="hamChia()">Division(*)</button>
+    <button onclick="hamNhan()">Multiplication(/)</button>
+   
+    
+    <script>
+            function hamCong(){
+                let ten1 = +document.getElementById('tinh').value;
+                let ten2 = +document.getElementById('toan').value;
+                alert('Kết quả là :' +(ten1+ten2));
+            }
+            function hamTru(){
+                let ten1 = +document.getElementById('tinh').value;
+                let ten2 = +document.getElementById('toan').value;
+                alert('Kết quả là :' +(ten1-ten2));
+            }
+            
+                function hamChia(){
+                let ten1 = +document.getElementById('tinh').value;
+                let ten2 = +document.getElementById('toan').value;
+                alert('Kết quả là :' +(ten1*ten2));
+            }
+            function hamNhan(){
+                let ten1 = +document.getElementById('tinh').value;
+                let ten2 = +document.getElementById('toan').value;
+                alert('Kết quả là :' +(ten1/ten2));
+            }
+    </script>
+</body>
+</html>
