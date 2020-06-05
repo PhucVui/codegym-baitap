@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let login = prompt("Nhập ID ");
+        let me = (login == 'Nhân viên');
+        if (login == "Nhân viên") {
+            me = 'Hello';
+        } else if (login == "Giám Đốc") {
+            me = 'Welcome';
+        } else if (login == '') {
+            me = 'Vui lòng nhập ID';
+        } else {
+            me = 'ID không có thật'
+        }
+        alert(me)
+    </script>
+</body>
+
+</html>
