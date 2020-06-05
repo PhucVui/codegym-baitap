@@ -20,35 +20,33 @@
             </td>
             <td>
                 <select name="VietNam" id="tien">
-                    <option  value="vnd">Việt Nam</option>
-                    <option  value="usd">USD</option>
+                    <option value="vnd">Việt Nam</option>
+                    <option value="usd">USD</option>
                 </select>
             </td>
             <Td>
                 <select name="USD">
                     <option value="USD" id="usd">USD</option>
                 </select>
-                <Td>
-                    <button onclick="convert()" class="vui"> Convert </button>
-                </Td>
+            <Td>
+                <button onclick="convert()" class="vui"> Convert </button>
+            </Td>
             </Td>
         </tr>
     </table>
     <script>
-        function convert(){
+        function convert() {
             let valueInput = +document.getElementById("Amount").value;
             let vui1 = document.getElementById("tien").value;
-            
-            if(vui1==='vnd'){
-                alert("Ket Qua " +valueInput/23000);
-            }else{
-                alert("Ket Qua " +valueInput*23000);
+
+            if (vui1 === 'vnd') {
+                alert("Ket Qua " + valueInput / 23000);
+            } else {
+                alert("Ket Qua " + valueInput * 23000);
             }
         }
-  
+
     </script>
-
-
-</body>
+    <if </body>
 
 </html>
