@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Script>
+        let bang;
+        bang = "<table border='1' style='width: 700px'>";
+        for (j = 1; j <= 9; j++) {
+            bang += "<tr>"
+            for (i = 2; i <= 9; i++) {
+                bang += '<td>' + i + "x" + j + " = " + i * j + '</td >';
+            } bang = bang + "</tr>";
+        }
+        bang += "</table>";
+        document.write(bang);
+        ;
+    </Script>
+
+</body>
+
+</html>
