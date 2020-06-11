@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="duyanhoc" name="q" />
+    <button onclick="tudien();">tìm kiếm</button>
+    <script>
+        function tudien() {
+            let Anh = ["Big Car", "New House", "Young Brother", "Remember", "Drum"];
+            let Viet = ["Xe lớn", "Nhà mới", "Em trai", "Ghi nhớ", "Cái Trống"];
+            let check = true
+            for (let i = 0; i < Anh.length; i++) {
+                if (document.getElementById('duyanhoc').value == Anh[i]) {
+                    document.write(Viet[i]);
+                    check = false;
+                }
+            }
+
+
+            if (check) {
+                document.write("bo tay")
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

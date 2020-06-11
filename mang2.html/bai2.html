@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = prompt("hay nhap so : ");
+        var chuoi = num.toString();
+        var i = [chuoi[0]];
+
+        for (var x = 1; x < chuoi.length; x++) {
+            if (chuoi[x - 1] % 2 === 0 && chuoi[x] % 2 === 0) {
+                i.push('-', chuoi[x]);
+            } else {
+                i.push(chuoi[x]);
+            }
+        }
+        document.write(i.join(''));
+    </script>
+</body>
+
+</html>
