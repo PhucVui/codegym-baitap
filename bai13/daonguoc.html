@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let x = [5, 8, 1, 7, -6, 10];
+        let dautien = 0;
+        let cuoicung = x.length - 1;
+        for (dautien; dautien < cuoicung; dautien++) {
+            let b = x[dautien];
+            x[dautien] = x[cuoicung];
+            x[cuoicung] = b;
+            cuoicung--;
+        }
+        document.write(x);
+    </script>
+</body>
+
+</html>
