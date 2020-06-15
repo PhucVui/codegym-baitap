@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function processConfirm(ham) {
+            let result = "";
+            if (ham) {
+                result = "Tốt lắm. Chúng ta sẽ chơi 1 ván cờ nhé ! ";
+            } else {
+                result = "Ok. Vậy để sau nhé ";
+            }
+            return result;
+        }
+
+        let confirmham = confirm(" Chúng ta có thể chơi 1 trò chơi được không ? ");
+        let theham = processConfirm(confirmham);
+        alert(theham);
+    </script>
+</body>
+
+</html>
