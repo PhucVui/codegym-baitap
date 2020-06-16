@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="ham()">
+
+    <!-- <script>
+
+        function ham() {
+            alert('xin chao');
+        }
+    </script>
+</body> ! -->
+
+    <!-- <body>
+    <script> -->
+    <!-- // let num = +prompt('Nhập vào số bất kì: ');
+        // alert(so(num));
+        // function so(num) {
+        //     num = num + 1;
+        //     return num;
+        // // } -->
+
+
+
+    <!-- <body>
+    <script>
+        function hamMoiTao(num1, num2) {
+            if (num1 > num2) {
+                alert(num1 + " > " + num2);
+            }
+            else if (num1 < num2) {
+                sum = num1 + num2;
+                document.write("Tổng của 2 số vừa nhập là : " + sum);
+            }
+        }
+        let num1 = +prompt("Hãy nhập vào số thứ 1 : ");
+        let num2 = +prompt("Hãy nhập số thứ 2 : ");
+        hamMoiTao(num1, num2)
+    </script>
+</body> -->
+
+    <!-- <body>
+        <script>
+            // function addNumbers() {
+            //     firstNum = 4;
+            //     secondNum = 8;
+
+            //     result = firstNum + secondNum;
+            //     return result;
+            // }
+            // result = 0;
+            // alert(result);
+            // result = addNumbers();
+            // alert(result);
+
+
+
+        </script>
+    </body> -->
+
+    <body>
+        <input type="text" id="duyanhoc" name="a" oninput="ngoisao()" /><br>
+        <span id="hienthi"></span>
+
+
+        <script>
+            function ngoisao() {
+                arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+                arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+                check = true;
+                for (let i = 0; i < arr1.length; i++) {
+                    if (document.getElementById("duyanhoc").value == arr1[i]) {
+                        document.getElementById('hienthi').innerHTML = arr2[i];
+                        check = false
+                    }
+
+                }
+                if (check) {
+                    document.getElementById('hienthi').innerHTML = 'Tao là Hiệu chó điên !!!';
+                }
+            }
+        </script>
+    </body>
+
+    <!-- </script>
+</body>
+
+</html>

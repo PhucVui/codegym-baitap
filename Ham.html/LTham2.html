@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script> -->
+    <!-- // function binhphuong(a) {
+        //     a = a * a;
+        //     return a;
+        // }
+        // let b = +prompt("Nhập vào số bất kì : ");
+        // alert(binhphuong(b));
+
+
+
+        // function dientich(r) {
+        //     dt = r * r * 3.14;
+        //     return dt
+        // }
+        // function chuvi(s) {
+        //     cv = s * 2 * 3.14;
+        //     return cv
+        // }
+        // let num = +prompt("Nhập bán kính : ");
+        // alert("Diện tích hình tròn là : " + dientich(num));
+        // alert("Chu vi hình tròn là : " + chuvi(num));
+
+
+
+        // function giaiThua(n) {
+        //     gt = 1;
+        //     for (let i = 1; i <= n; i++) {
+        //         gt = gt * i;
+        //     }
+        //     return gt;
+        // }
+        // let a = +prompt("Nhập vào 1 số muốn tính giai thừa : ");
+        // alert("Kết quả là : " + giaiThua(a));
+
+
+
+        // function kytu(a) {
+        //     if (a > 0 || a < 0 || a == 0) {
+        //         return (a + " là kí tự số");
+        //     } else {
+        //         return (" là kí tự");
+        //     }
+        // }
+        // let b = +prompt('Nhập kí tự muốn kiểm tra: ');
+        // alert(kytu(b));
+
+
+
+        // function soNguyen(num1, num2, num3) {
+        //     if (num1 < num2 && num1 < num3) {
+        //         return ('số thứ nhất nhỏ nhất');
+        //     } else if (num2 < num1 && num2 < num3) {
+        //         return ('số thứ hai nhỏ nhất');
+        //     } else {
+        //         return ('số thứ ba nhỏ nhất');
+        //     }
+        // }
+        // let a = +prompt('Nhập số thứ nhất: ');
+        // let b = +prompt('Nhập số thứ hai: ');
+        // let c = +prompt('Nhập số thứ ba: ')
+        // alert(soNguyen(a, b, c));
+
+
+
+        // function soNguyenDuong(a) {
+        //     if (a >= 0) {
+        //         return ('True');
+        //     } else {
+        //         return ('False')
+        //     }
+        // }
+        // let b = +prompt('Nhập vào số bất kì để kiểm tra phải số nguyên dương không: ');
+        // alert(soNguyenDuong(b));
+
+
+
+        // function soNguyen(a, b) {
+        //     c = a;
+        //     a = b;
+        //     b = c;
+        //     str = 'số thứ nhất là: ' + a + ' ' + ' số thứ hai là: ' + b;
+        //     return str;
+        // }
+        // let num1 = +prompt('Nhập số thứ nhất: ');
+        // let num2 = +prompt('Nhập số thứ 2hai: ');
+        // alert(soNguyen(num1, num2));
+
+
+
+        // function mang(a, b) {
+        //     let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        //     let first = 0
+        //     let last = a.length - 1;
+        //     while (first < last) {
+        //         let b = a[first];
+        //         a[first] = a[last];
+        //         a[last] = b;
+        //         first++;
+        //         last--;
+        //     }
+
+        // } console.log(a);
+
+
+        let kytu = ['a','b','c','d','e','b','a'];
+        function kytu(ham) {
+           
+           for(let i=0; i < ham.length; i++) {
+            if()
+           }
+        }
+
+
+
+        let input = prompt('Nhập kí tự bất kì: ');
+        ale
+
+
+
+
+
+    </script> -->
+
+    <body>
+        <input type="text" id="duyanhoc" name="a" oninput="kytu()" placeholder="Nhập kí tự bất kì" /><br>
+        <span id="hienthi"></span>
+
+        <script>
+            let arr = ['a', 'b', 'c', 'd', 'e', 'b', 'a'];
+            function kytu(kytubatky) {
+                let dem = 0;
+                inputtext = document.getElementById('duyanhoc').value;
+                for (let i = 0; i < arr.length; i++) {
+                    if (inputtext == arr[i]) {
+                        dem = dem + 1;
+                    }
+                }
+                if (dem == 0) {
+                    dem = -1;
+                }
+                document.getElementById('hienthi').innerHTML = dem;
+            }
+        </script>
+
+
+    </body>
+
+</html>

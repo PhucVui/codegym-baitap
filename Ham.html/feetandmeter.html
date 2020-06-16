@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label>Meter To Feet</label>
+            <input id="MeterToFeet" type="number" placeholder="Foot and Meter" onchange="ChuyenDoi(this.value)"
+                oninput="ChuyenDoi(this.value)">
+        </p>
+        <p> Feet: <span id="outputmeter"></span></p>
+        <p>
+            <label>Feet To Meter</label>
+            <input id="FootToMeter" type="number" placeholder="Foot and Meter" onchange="ChuyenDoiFeet(this.value)"
+                oninput="ChuyenDoiFeet(this.value)">
+        </p>
+        <p> Meter: <span id="outputfeet"></span></p>
+
+    </form>
+
+
+    <script>
+        function ChuyenDoi(outputmeter) {
+            outputmeter = 0.305 * outputmeter
+
+            document.getElementById("outputmeter").innerHTML = outputmeter
+        }
+        function ChuyenDoiFeet(outputfeet) {
+            outputfeet = 3.279 * outputfeet
+
+            document.getElementById("outputfeet").innerHTML = outputfeet
+        }
+
+    </script>
+
+</body>
+
+</html>
