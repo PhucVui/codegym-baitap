@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>game doyouloveme</title>
 </head>
+
 <body>
-    <h1>Do you love me?</h1>
+    <h1>Are you a dog?</h1>
     <button type="button" id="btn-yes" onclick="dongy();">yes</button>
-    <button type="button" id="btn-no" onmousemove="randombtn();" style="position: absolute; left: 60px; top: 80px;" value="  NO  ">no</button>
+    <button type="button" id="btn-no" onmousemove="randombtn();" style="position: absolute; left: 60px; top: 80px;"
+        value="  NO  ">no</button>
     <script>
-        function dongy(){
-            alert('<3');
+        function dongy() {
+            alert('Sủa lên nào !!!');
         }
         //let nutbam=document.getElementById("btn-no");
-        function randombtn(){
+        function randombtn() {
             var x = Math.round(Math.random() * window.innerWidth);
             var y = Math.round(Math.random() * window.innerHeight);
             document.getElementById('btn-no').style.left = x + 'px';
@@ -26,4 +29,5 @@
         }
     </script>
 </body>
+
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  Xây dựng lớp
+        let MyDate = function (day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+
+            //  Xây dụng phương thức"get"
+            this.getDay = function () {
+                return this.day;
+            }
+            this.getMonth = function () {
+                return this.month;
+            }
+            this.getYear = function () {
+                return this.year;
+            }
+            //  Xây dựng phương thức thiết đặt "this.set...=function()"
+            this.setDay = function (day) {
+                this.day = day;
+            }
+            this.setMonth = function (month) {
+                this.month = month;
+            }
+            this.setYear = function (year) {
+                this.year = year;
+            }
+        };
+        //  Gọi lớp + đưa dữ liệu vào (let name = "new + tên gọi hàm(dữ liệu)")
+        let date = new MyDate(18, 6, 2020);
+        let day = date.getDay();
+        let month = date.getMonth();
+        let year = date.getYear();
+        alert(date.getDay() + "" + month + "" + year + "");
+
+        // Gọi phương thức thay đổi
+        date.setDay(16);
+        date.setMonth(4);
+        date.setYear(1995);
+        alert(date.getDay() + "" + date.getMonth() + "" + date.getYear() + "");
+
+
+
+
+    </script>
+</body>
+
+</html>

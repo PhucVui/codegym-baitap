@@ -8,11 +8,24 @@
 </head>
 
 <body>
-    <h1>FakeText</h1>
-    <textarea on></textarea>
+    <h1>Fake Text</h1>
+    <textarea id="this" oninput="onTypeText(this)" cols="50" rows="20"></textarea>
     <script>
-        var fakeText = "Tôi là Duy Anh OC"
-        function onTypetext(textarea)
+        var fakeText = "Tôi là Duy Anh óc chó !!!";
+        function onTypeText(textarea) {
+
+            var dodai = textarea.value.length;
+            const arrayStr = [];
+            if (dodai <= fakeText.length) {
+                for (let i = 0; i < dodai; i++) {
+                    arrayStr.push(fakeText[i]);
+                }
+            }
+            const result = arrayStr.join("");
+            textarea.value = result;
+
+        }
+
     </script>
 </body>
 
