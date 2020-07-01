@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="mydraw" width="200px" height="150px" style="border: 1px solid ;"></canvas>
+    <script>
+        class Circle {
+            radius;
+            color;
+            x;
+            y;
+            constructor(radius, color, x, y) {
+                this.radius = radius;
+                this.color = color;
+                this.x = x;
+                this.y = y;
+            }
+            render(canvas) {
+                let context = canvas.getContext("2d");
+                context.beginPath();
+                context.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                context.fillStyle = this.color;
+                context.fill();
+                context.stroke();
+            }
+        }
+        let Circle1 = new Circle(30, "#FF3300", 40, 50);
+        let canvascircle1 = document.getElementById("mydraw");
+        Circle1.render(canvascircle1);
+    </script>
+</body>
+
+</html>

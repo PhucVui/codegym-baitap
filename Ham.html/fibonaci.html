@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = +prompt("Nhập số lượng muốn xuất ra trong dãy fibonacci(Number only) :")
+
+
+        function fibonacci(num) {
+            let num1 = 0;
+            let num2 = 1;
+            let num3;
+            if (num <= 0 || num == "") {
+                alert("Vui lòng nhập lại")
+            } else if (num == 1) {
+                document.write(num);
+            } else {
+                for (let i = 1; i <= num; i++) {
+                    num3 = num1 + num2;
+                    num1 = num2;
+                    num2 = num3;
+                    document.write(num3 + ',');
+                }
+            }
+        } fibonacci(num);
+
+
+
+    </script>
+</body>
+
+</html>

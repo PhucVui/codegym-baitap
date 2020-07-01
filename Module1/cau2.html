@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tryRemoveFromArray(arr, index) {
+            if (!Number.isInteger(index)) {
+                return 'khong phai dang so';
+            }
+            if (index < 0 || index >= arr.length || !Array.isArray(arr)) {
+                return;
+            }
+
+            for (let i = 0; i < arr.length; i++) {
+                if (i == index) {
+                    arr.splice(index, 1);
+                }
+            }
+
+            return arr;
+        }
+
+        let arr = [12, 6, 3, 7, 21, 5, 7];
+        let a = [12, 6, 3, 7, 21, 5, 7];
+        let b = [12, 6, 3, 7, 21, 5, 7];
+        let c = "shgasjkdh";
+
+
+        // document.write(tryRemoveFromArray(arr, 2) + "<br>");
+        document.write(tryRemoveFromArray(a, 'dsds') + "<br>");
+        // document.write(tryRemoveFromArray(b, 7) + "<br>");
+        // document.write(tryRemoveFromArray(c, 0) + "<br>");
+    </script>
+</body>
+
+</html>

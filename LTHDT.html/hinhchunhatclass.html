@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="hinhchunhat"
+      width="300"
+      height="350"
+      style="border: 1px solid #000000;"
+    ></canvas>
+    <script>
+      class Rectangle {
+        constructor(dai, rong, mausac) {
+          this.dai = dai;
+          this.rong = rong;
+          this.mausac = mausac;
+        }
+        tinhDienTich() {
+          return this.dai * this.rong;
+        }
+        tinhChuVi() {
+          return (this.dai + this.rong) * 2;
+        }
+        veHinh(canvas, x, y) {
+          let ctx = canvas.getContext("2d");
+          ctx.fillStyle = this.mausac;
+          ctx.fillRect(x, y, this.dai, this.rong);
+        }
+      }
+      let canvas1 = document.getElementById("hinhchunhat");
+      let hinhchunhat1 = new Rectangle(100, 80, "blue");
+      hinhchunhat1.veHinh(canvas1, 50, 50);
+    </script>
+  </body>
+</html>

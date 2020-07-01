@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function migratoryBirds(arr) {
+        let arrcount = [];
+        let arrchecked = [];
+        //lấy các loại giá trị ra để xét
+        for (let i = 0; i < arr.length; i++) {
+          //   let a = arr[i];
+          let check = true;
+          for (let x = 0; x < arrchecked.length; x++) {
+            if (arr[i] == arrchecked[x]) {
+              check = false;
+              break;
+            }
+          }
+          if (check == true) {
+            arrchecked.push(arr[i]);
+          }
+          //   arrcount.push(count);
+        }
+        //đếm số lần xuất hiện của mỗi giá trị rồi đưa vào mảng
+        for (let i = 0; i < arrchecked.length; i++) {
+          let count = 0;
+          for (let j = 0; j < arr.length; j++) {
+            if (arrchecked[i] == arr[j]) {
+              count++;
+            }
+          }
+          arrcount.push(count);
+        }
+        //tìm max trong mảng vừa nhận được
+        let maxcount = arrcount[0];
+        let loca = 0;
+        for (let i = 1; i < arrcount.length; i++) {
+          if (maxcount < arrcount[i]) {
+            maxcount = arrcount[i];
+          }
+        }
+
+        let arrindextop = [];
+        for (let i = 0; i < arrcount.length; i++) {
+          if (maxcount == arrcount[i]) {
+            arrindextop.push(i);
+          }
+        }
+        let minInarrchecked = arrchecked[arrindextop[0]];
+        for (let i = 1; i < arrindextop.length; i++) {
+          if (minInarrchecked > arrchecked[arrindextop[i]]) {
+            minInarrchecked = arrchecked[arrindextop[i]];
+          }
+        }
+        return minInarrchecked;
+      }
+      let arr = [1, 3, 2, 6, 1, 2, 3];
+      document.write(migratoryBirds(arr));
+    </script>
+  </body>
+</html>

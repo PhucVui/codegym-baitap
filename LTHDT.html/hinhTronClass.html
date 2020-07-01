@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <canvas id="mydraw" width="200px" height="150px" style="border: 1px solid ;"></canvas>
+  <script>
+    class HinhTron {
+      bankinh;
+      mausac = "";
+      x;
+      y;
+      constructor(bankinh, mausac, x, y) {
+        this.bankinh = bankinh;
+        this.mausac = mausac;
+        this.x = x;
+        this.y = y;
+      }
+
+
+      veHinhTron(canvas) {
+        let context = canvas.getContext("2d");
+        context.beginPath();
+
+        context.arc(this.x, this.y, this.bankinh, 0, 2 * Math.PI);
+
+        context.fillStyle = this.mausac;
+        context.fill();
+
+        context.stroke();
+      }
+    }
+    let HinhTron1 = new HinhTron(30, "red", 40, 50);
+    let canvashinhtron1 = document.getElementById("mydraw");
+    HinhTron1.veHinhTron(canvashinhtron1);
+  </script>
+</body>
+
+</html>

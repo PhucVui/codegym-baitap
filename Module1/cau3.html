@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = +prompt("Nhập năm muốn kiểm tra có phải năm nhuận hay không :")
+
+        function isLeapYear(numYear) {
+
+            if (numYear % 400 == 0) {
+                return true;
+            }
+            else if (numYear % 4 == 0 && numYear % 100 != 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        document.write(isLeapYear(num));
+
+
+        // let num = +prompt("Nhập năm muốn kiểm tra có phải năm nhuận hay không :")
+        // function isLeapYear(numyear) {
+        //     if (numyear % 400 == 0) {
+        //         return numyear + " là năm nhuận";
+        //     }
+        //     else if (numyear % 4 == 0 && numyear % 100 != 0) {
+        //         return numyear + " là năm nhuận";
+        //     }
+        //     else {
+        //         return numyear + " không phải là năm nhuận";
+        //     }
+        // }
+        // document.write(isLeapYear(num));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [0, -1, 11, 5, 7, 16, 18, 20, 30];
+        let arrsonguyento = [];
+        for (let i = 0; i < arr.length; i++) {
+            let check = true;
+            for (let j = 2; j < arr[i]; j++) {
+                if (arr[i] % j == 0) {
+                    check = false;
+                    break;
+                }
+            }
+            if (check == true && arr[i] >= 2) {
+                arrsonguyento.push(arr[i]);
+            }
+        }
+        document.write(arrsonguyento);
+
+    </script>
+</body>
+
+</html>

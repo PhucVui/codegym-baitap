@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let doC = +prompt('Nhập độ C: ');
+        // let doF = doC * 1.8 + 32
+        // alert("Độ F là : " + doF)
+
+
+        // let met = +prompt("Nhập mét muốn đổi sang feet : ")
+        // let feet = met * 3.2808;
+        // alert(feet + " feet ")
+
+
+        // let a = +prompt("Nhập cạnh a")
+        // let s = a * a
+        // alert("Diện tích hình vuông là: " + s)
+
+
+        // let a = +prompt("Nhập cạnh a : ");
+        // let b = +prompt("Nhập cạnh b : ");
+        // let s = a * b
+        // alert("Diện tích hình chữ nhật là : " + s)
+
+
+        // let a = +prompt("Nhập cạnh a : ");
+        // let b = +prompt("Nhập cạnh b : ");
+        // let s = (a * b) / 2
+        // alert("Diện tích tam giác vuông là : " + s)
+
+
+
+        // let a = +prompt("Nhập a: ");
+        // let b = +prompt("Nhập b :")
+        // let x;
+        // if (a == 0 && b == 0) {
+        //     alert("Phương trình có vô số nghiệm");
+        // }
+        // else if (a == 0 && b !== 0) {
+        //     alert("Phương trình vô nghiệm");
+        // }
+        // else if (a != 0 && b != 0) {
+        //     x = -b / a;
+        //     alert(x);
+        // }
+
+
+        // let a = +prompt("Nhập a :");
+        // let b = +prompt("Nhập b :");
+        // let c = +prompt("Nhập c :");
+        // let delta;
+        // let x;
+        // let x1;
+        // let x2;
+        // delta = b * b - (4 * a * c);
+        // if (delta < 0) {
+        //     alert(" Phương trình vô nghiệm ");
+        // }
+        // else if (delta == 0) {
+        //     x = -b / (2 * a);
+        //     alert(x);
+        // }
+        // else if (delta > 0) {
+        //     x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        //     alert(x1);
+        //     x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        //     alert(x2);
+        // }
+
+
+
+        // let soTuoi = +prompt("Nhập số tuổi muốn kiểm tra: ")
+        // if (soTuoi > 0 && soTuoi < 120) {
+        //     alert("Bạn đã nhập vào đúng số tuổi của loài người :))")
+        // }
+        // else {
+        //     alert("Bạn đang nhập tuổi của quái vật à???")     
+        // }
+
+
+        // let a = +prompt("Nhập a: ");
+        // let b = +prompt("Nhập b: ");
+        // let c = +prompt("Nhập c: ");
+        // if (a, b, c > 0 && a + b > c && b + c > a && a + c > b) {
+        //     alert(" a,b,c là 3 cạnh tam giác")
+        // }
+
+
+
+        // let soDien = +prompt("Nhập số điện tiêu thụ")
+        // if (soDien > 0 && soDien <= 50) {
+        //     giaTien = soDien * 1678;
+        // }
+        // else if (soDien >= 51 && soDien <= 100) {
+        //     giaTien = soDien * 1734;
+        // }
+        // else if (soDien >= 101 && soDien <= 200) {
+        //     giaTien = soDien * 2014
+        // }
+        // else if (soDien >= 201 && soDien <= 300) {
+        //     giaTien = soDien * 2536
+        // } else {
+        //     giaTien = soDien * 2900
+        // }
+        // document.write(" Số tiền phải trả là : " + giaTien + " đồng")
+
+
+
+        // let soLuong = +prompt("Số lương 1 năm bạn nhận được(triệu đồng):");
+        // let thue = 0;
+        // if (soLuong == 60) {
+        //     thue = soLuong * 5 / 100;
+        // }
+        // else if (soLuong > 60 && soLuong <= 120) {
+        //     thue = soLuong * 10 / 100
+        // }
+        // else if (soLuong > 120 && soLuong <= 216) {
+        //     thue = soLuong * 15 / 100
+        // }
+        // else if (soLuong > 216 && soLuong <= 384) {
+        //     thue = soLuong * 20 / 100
+        // }
+        // else {
+        //     (soLuong > 384)
+        //     thue = soLuong * 25 / 100
+        // }
+        // document.write("Thuế thu nhập cá nhân là : " + thue + " triệu đồng")
+
+
+
+        let soTienCanVay = + prompt("Nhập số tiền cần vay (10tr,20tr,...): ");
+        let soThang = + prompt("Nhập số tháng muốn trả cho khoản vay (6 tháng, 12 tháng)");
+        let laiSuat = 0;
+        let tienTraHangThang = 0;
+
+        if (soTienCanVay == 10000000) {
+            laiSuat = soTienCanVay * 12 / 100;
+            tienTraHangThang = Math.round((laiSuat + soTienCanVay) / soThang)
+
+        }
+        else if (soTienCanVay == 20000000) {
+            laiSuat = soTienCanVay * 15 / 100;
+            tienTraHangThang = Math.round((laiSuat + soTienCanVay) / soThang)
+        }
+        else if (soTienCanVay == 30000000) {
+            laiSuat = soTienCanVay * 18 / 100;
+            tienTraHangThang = Math.round((laiSuat + soTienCanVay) / soThang)
+        }
+        else if (soTienCanVay > 30000000 && soTienCanVay <= 100000000) {
+            laiSuat = soTienCanVay * 20 / 100;
+            tienTraHangThang = Math.round((laiSuat + soTienCanVay) / soThang)
+        }
+        document.write("Số tiền đóng hàng thàng là : " + tienTraHangThang + " đồng")
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
